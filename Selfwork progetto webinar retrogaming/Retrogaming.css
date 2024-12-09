@@ -1,0 +1,327 @@
+h1, h2, h3, p{
+    font-family: "Montserrat", serif;
+    color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white; 
+    margin-left: 200px;
+}
+
+/* Sezione 1 */
+.background1{
+    background-image: url('./bg-1.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: relative; 
+}
+
+.col-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.logo{
+    width: 30%;
+    height: 10%;
+}
+
+.calendario{
+    width: 15%;
+    height: 25%;
+    float: left;
+    margin-right: 15px;
+}
+
+.fontdata{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.transparentbutton{
+    background-color: transparent; 
+    color: yellow; 
+    border: 2px solid yellow; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    width: 50%;
+    border-radius: 20px;
+}
+
+.transparent-button:hover {
+    background-color: rgba(255, 255, 0, 0.2); 
+}
+
+.arcade{
+    width: 90%;
+    height: 90%;
+}
+
+
+/* Sezione 2 */
+.background2{
+    background-color:  #00204f;
+}
+
+.h3custom{
+    font-size: 35px;
+}
+
+.section3{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Sezione 3 */
+.background3 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('bg-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.formcustom{
+    background-color: rgba(28, 18, 48, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: white;
+    max-width: 500px;
+    margin-top: 100px;
+}
+
+.leggiqui{
+    color: yellow;
+}
+
+.formbutton{
+    background-color: yellow;
+    border: 2px solid;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer;
+    width: 50%;
+    border-radius: 20px;
+}
+
+/* Sezione 4 */
+.background4{
+    background-color:  #100127;
+}
+
+.aulabled{
+    width: 70%;
+    height: 70%;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.h3custom2{
+    color: yellow;
+}
+
+/* Sezione 5 */
+.marcobackground{
+    background-image: url('./bg-3.jpg');  
+}
+
+.h3custom3{
+    color: yellow;
+}
+
+.insabato{
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.marcocard{
+    width: 70%;
+    height: 80%;
+    margin-left: 100px;
+}
+
+/* Media Queries per Tablet e Smartphone */
+
+/* Tablet */
+@media (max-width: 850px) {
+    .content {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .col-6 {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .logo {
+        width: 50%;
+        
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    .calendario {
+        width: 30%;
+        height: 20%;
+        float: none;
+    }
+    
+    .transparentbutton {
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+    
+    .arcade {
+        width: 80%;
+        height: 80%;
+    }
+    
+    .background3 {
+        height: 70vh;
+    }
+    
+    .formcustom {
+        width: 60%;
+        margin-top: 50px;
+    }
+    
+    .formbutton {
+        width: 90%;
+    }
+    
+    .formcustom input, .formcustom button {
+        font-size: 14px;
+    }
+    
+    .aulabled {
+        width: 80%;
+        height: auto;
+        margin: 50px 0;
+    }
+    
+    .h3custom2, .h3custom3 {
+        font-size: 28px;
+    }
+    
+    .insabato, .marcocard {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+/* Smartphone */
+@media (max-width: 480px) {
+    .content {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .col-6 {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+    
+    .logo {
+        width: 60%; 
+    }
+    
+    .calendario {
+        width: 40%;
+        height: auto; 
+        float: none;
+    }
+    
+    .transparentbutton {
+        width: 90%;
+        font-size: 14px;
+    }
+    
+    .arcade {
+        width: 70%;
+        height: auto;
+    }
+    
+    .background3 {
+        height: 60vh;
+    }
+    
+    .formcustom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        width: 80%;
+    }
+    
+    .formbutton {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .formcustom input, .formcustom button {
+        font-size: 12px;
+    }
+    
+    .aulabled {
+        width: 90%;
+        height: auto;
+        margin: 30px 0;
+    }
+    
+    .h3custom2, .h3custom3 {
+        font-size: 22px;
+    }
+    
+    .h3custom3 {
+        margin-top: 50px;
+    }
+    
+    .insabato, .marcocard {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
